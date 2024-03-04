@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import styled from 'styled-components';
 import {myTheme} from './styles/Theme';
+import {ButtonContainer, ButtonStyled} from './styles/ButtonStyled';
 
 function App() {
     return (
@@ -21,13 +22,16 @@ function App() {
 }
 
 const ContainerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-around;
   height: 300px;
   width: 250px;
   border: ${myTheme.color.white};
   border-radius: 15px;
   background-color: ${myTheme.color.white};
   padding: 10px;
- 
+  gap: 18px;
 `;
 
 const ImgStyled = styled.img`
@@ -44,14 +48,9 @@ const HeaderStyled = styled.h1`
 
 const ParagraphStyled = styled.p`
   font-size: 12px;
+  opacity: 0.5;
 `;
 
-const ButtonContainer = styled.div`
 
-`;
-
-const ButtonStyled = styled.button`
-
-`;
 
 export default App;

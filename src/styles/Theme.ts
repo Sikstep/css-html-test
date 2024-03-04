@@ -1,7 +1,7 @@
 
 export const myTheme = {
     color: {
-        primary: '',
+        primary: 'blue',
         secondary: '',
         grey: {
             light: 'lightgray',
